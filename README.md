@@ -82,3 +82,20 @@ docker ps
 ``` 
 
 ![docker ps](./resources/images/docker_ps.png "docker ps")
+
+In order to copy the content of the file 'kaggle.json' to the Airflow docker container, follow the steps.
+
+```cmd
+
+# login to the docker container (scheduler)
+docker exec -it <container-name> bash
+
+var_kaggle_dir="/home/astro/.kaggle"
+var_kaggle_file="${var_kaggle_dir}/kaggle.json"
+mkdir -p ${var_kaggle_dir} & echo '{"username":"username","key":"apikeyblabla"}' >${var_kaggle_file} & chmod 775 ${var_kaggle_file}
+
+
+```
+
+![copy_kaggle_key_to_container](./resources/images/copy_kaggle_key_to_container.png "copy_kaggle_key_to_container")
+
