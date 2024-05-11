@@ -34,6 +34,9 @@ cd airflow_duckdb
 
 astro dev init
 
-
+copy resources\dags\ dags\
+mkdir include\sql
+copy resources\include\sql\ include\sql\
+copy resources\requirements.txt requirements.txt
 
 ```
