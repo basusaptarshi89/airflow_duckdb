@@ -2,9 +2,9 @@
 Sample Airflow DAG with DuckDB for data analysis
 
 
-## Setup steps
+# Setup steps
 
-#### Install Astro CLI (Airflow)
+## Install Astro CLI (Airflow)
 
 I have used astro CLI to setup Airflow server (docker) locally. It is possible to use docker directly to setup Airflow. 
 However, astro CLI can help reduce the setup time drastically.
@@ -14,7 +14,7 @@ However, astro CLI can help reduce the setup time drastically.
 Please check the documentation for installing Astro CLI - [Install the Astro CLI](https://docs.astronomer.io/astro/cli/install-cli?tab=windowswithwinget#install-the-astro-cli)
 
 
-#### Get started with Airflow (using Astro CLI)
+## Get started with Airflow (using Astro CLI)
 
 Documentation - [Get started](https://docs.astronomer.io/astro/cli/get-started-cli)
 
@@ -50,7 +50,7 @@ The last command (astro dev start) should start the docker containers for Airflo
 ![astro dev start](./resources/images/astro_dev_start.png "astro dev start")
 
 
-#### Generate Kaggle API key/token
+## Generate Kaggle API key/token
 
 The sample dataset used in this project is downloaded from Kaggle (https://www.kaggle.com/datasets/rahulvyasm/netflix-movies-and-tv-shows). The choice of dataset is completely random. However, if you decide to use a different dataset, please ensure to check the column names and adjust the SQL statements accordingly.
 
@@ -69,7 +69,7 @@ Clicking on the "Create New Token" button will download 'kaggle.json' file.
 ![Kaggle API key generation](./resources/images/create_kaggle_api_key.png "Kaggle API key generation")
 
 
-#### Copy the Kaggle API key file to Airflow docker container
+## Copy the Kaggle API key file to Airflow docker container
 
 The API key file (generated in the last step), need to be copied to the Airflow docekr container.
 
@@ -98,4 +98,12 @@ mkdir -p ${var_kaggle_dir} & echo '{"username":"username","key":"apikeyblabla"}'
 ```
 
 ![copy_kaggle_key_to_container](./resources/images/copy_kaggle_key_to_container.png "copy_kaggle_key_to_container")
+
+
+## Check the AIrflow DAG
+
+The Airflow DAG should be visible on the UI after the Kaglle API key has been set.
+
+![airflow dag](./resources/images/airflow_dag_load_data.png "airflow dag")
+
 
