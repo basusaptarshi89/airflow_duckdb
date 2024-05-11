@@ -49,3 +49,15 @@ The last command (astro dev start) should start the docker containers for Airflo
 
 ![astro dev start](./resources/images/astro_dev_start.png "astro dev start")
 
+
+#### Setup Kaggle API key
+
+The sample dataset used in this project is downloaded from Kaggle (https://www.kaggle.com/datasets/rahulvyasm/netflix-movies-and-tv-shows). The choice of dataset is completely random. However, if you decide to use a different dataset, please ensure to check the column names and adjust the SQL statements accordingly.
+
+
+Create your free account on Kaggle (https://www.kaggle.com/) and create API key.
+
+Once you are logged in to the website, on top right corner you will find your profile. Got to settings and generate the API key.
+
+![Kaggle API key generation](./resources/images/create_kaggle_api_key.png "Kaggle API key generation")
+
