@@ -42,11 +42,11 @@ def get_airflow_connection(connection_name):
     return conn
 
 
-# #################################### #
-#  DAG: netflix_data_analysis_duckdb
-# #################################### #
+# ################################################## #
+#  DAG: create_duckdb_table_from_netflix_shows_data
+# ################################################## #
 @dag(
-        dag_id="netflix_data_analysis_duckdb",
+        dag_id="create_duckdb_table_from_netflix_shows_data",
         start_date=None,
         schedule=None,
         catchup=False,
@@ -57,7 +57,7 @@ def get_airflow_connection(connection_name):
             "airflow_folder": "/usr/local/airflow/include"            
         }
 )
-def netflix_data_analysis_duckdb():
+def create_duckdb_table_from_netflix_shows_data():
 
     @task()
     def set_folder_paths(**context):
@@ -147,4 +147,4 @@ def netflix_data_analysis_duckdb():
     create_duckdb_table(folder_paths, csv_file_path)
 
 
-netflix_data_analysis_duckdb()
+create_duckdb_table_from_netflix_shows_data()
