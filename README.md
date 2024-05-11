@@ -20,7 +20,7 @@ Documentation - [Get started](https://docs.astronomer.io/astro/cli/get-started-c
 
 > **NOTE** You need to have Git installed on your computer to be able to clone the repository.
 
-Command to setup:
+Setup command (windows):
 
 ```cmd
 
@@ -44,3 +44,8 @@ astro dev start
 
 
 ```
+
+The last command (astro dev start) should start the docker containers for Airflow server.
+
+![astro dev start](resources\images\astro_dev_start.png "astro dev start")
+
