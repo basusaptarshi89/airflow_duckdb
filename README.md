@@ -47,5 +47,5 @@ astro dev start
 
 The last command (astro dev start) should start the docker containers for Airflow server.
 
-![astro dev start](resources\images\astro_dev_start.png "astro dev start")
+![astro dev start](./resources/images/astro_dev_start.png "astro dev start")
 
