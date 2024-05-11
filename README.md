@@ -79,13 +79,6 @@ You will be able to view all the containers running on your machine using the fo
 
 docker ps
 
-
-(base) C:\Users\basus\Git\airflow_duckdb>docker ps
-CONTAINER ID   IMAGE                                  COMMAND                  CREATED          STATUS                    PORTS                      NAMES
-e4f0bf5ea3e5   airflow-duckdb_ff8179/airflow:latest   "tini -- /entrypoint…"   23 minutes ago   Up 23 minutes (healthy)   127.0.0.1:8080->8080/tcp   airflow-duckdb_ff8179-webserver-1
-f1923f64ae38   airflow-duckdb_ff8179/airflow:latest   "tini -- /entrypoint…"   23 minutes ago   Up 23 minutes                                        airflow-duckdb_ff8179-scheduler-1
-3b07dc0a685c   airflow-duckdb_ff8179/airflow:latest   "tini -- /entrypoint…"   23 minutes ago   Up 22 minutes                                        airflow-duckdb_ff8179-triggerer-1
-e1fbb9684e3f   postgres:12.6                          "docker-entrypoint.s…"   23 minutes ago   Up 23 minutes             127.0.0.1:5432->5432/tcp   airflow-duckdb_ff8179-postgres-1
-
-
 ``` 
+
+![docker ps](./resources/images/docker_ps.png "docker ps")
