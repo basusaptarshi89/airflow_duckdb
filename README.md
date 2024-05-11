@@ -16,11 +16,11 @@ Please check the documentation for installing Astro CLI - [Install the Astro CLI
 
 #### Get started with Airflow (using Astro CLI)
 
-Please use this document to initiate and start the Airflow server - [Get started](https://docs.astronomer.io/astro/cli/get-started-cli)
+Documentation - [Get started](https://docs.astronomer.io/astro/cli/get-started-cli)
 
 > **NOTE** You need to have Git installed on your computer to be able to clone the repository.
 
-Sample:
+Command to setup:
 
 ```cmd
 
@@ -38,5 +38,9 @@ copy resources\dags\ dags\
 mkdir include\sql
 copy resources\include\sql\ include\sql\
 copy resources\requirements.txt requirements.txt
+
+astro dev start
+
+
 
 ```
